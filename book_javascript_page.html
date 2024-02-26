@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Привет, мир!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper">
+        <a href="index.html"
+          ><img src="./img/logo_min.png" alt="" class="logo_min"
+        /></a>
+        <div class="header_a_container">
+          <a href="index.html#me" class="header_a">О нас</a>
+          <a href="index.html#contact" class="header_a">Контакты</a>
+          <a href="index.html#faq" class="header_a">FAQ</a>
+          <a href="index.html#adv" class="header_a">Преимущества</a>
+          <a href="index.html#rev" class="header_a">Отзывы</a>
+          <a href="books.html" class="header_a">Учебники</a>
+        </div>
+        <button class="header_btn">Начать</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="title">Привет, мир!</h1>
+        <p class="book_text">
+          В этой части учебника мы изучаем собственно JavaScript, сам язык.
+          <br />
+          <br />
+          Но нам нужна рабочая среда для запуска наших скриптов, и, поскольку
+          это онлайн-книга, то браузер будет хорошим выбором. В этой главе мы
+          сократим количество специфичных для браузера команд (например,
+          <span class="pick">alert</span> ) до минимума, чтобы вы не тратили на
+          них время, если планируете сосредоточиться на другой среде (например,
+          Node.js). А на использовании JavaScript в браузере мы сосредоточимся в
+          следующей части учебника. <br />
+          <br />
+          Итак, сначала давайте посмотрим, как выполнить скрипт на странице. Для
+          серверных сред (например, Node.js), вы можете выполнить скрипт с
+          помощью команды типа <span class="pick">"node my.js"</span>. Для
+          браузера всё немного иначе.
+        </p>
+        <h2 class="subtitle">Тег «script»</h2>
+        <p class="book_text">
+          Программы на JavaScript могут быть вставлены в любое место
+          HTML-документа с помощью тега
+          <span class="pick">&lt;script&gt;</span>.
+        </p>
+        <code>
+          <div class="code_num">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+          </div>
+          <div class="code_field">
+            <br />
+            <span class="tag_html"> &lt;script&gt; <br /> </span>
+            <span class="tab"
+              ><span class="tag_js">alert</span>( 'Привет, мир!' );<br
+            /></span>
+            <span class="tag_html">&lt;/script&gt;<br /></span>
+          </div>
+        </code>
+        <div class="info">
+          <div class="info_up">
+            <img src="./img/info.png" alt="" class="info_img" />
+            <p class="info_title">На заметку</p>
+          </div>
+          <p class="info_text">
+            Как правило, только простейшие скрипты помещаются в HTML. Более
+            сложные выделяются в отдельные файлы. <br />
+            Польза отдельных файлов в том, что браузер загрузит скрипт отдельно
+            и сможет хранить его в кеше. <br />
+            Другие страницы, которые подключают тот же скрипт, смогут брать его
+            из кеша вместо повторной загрузки из сети. И таким образом файл
+            будет загружаться с сервера только один раз. <br />
+            Это сокращает расход трафика и ускоряет загрузку страниц.
+          </p>
+        </div>
+        <div class="warn">
+          <div class="info_up">
+            <img src="./img/warn.png" alt="" class="info_img" />
+            <p class="info_title">На заметку</p>
+          </div>
+          <p class="info_text">
+            Как правило, только простейшие скрипты помещаются в HTML. Более
+            сложные выделяются в отдельные файлы. <br />
+            Польза отдельных файлов в том, что браузер загрузит скрипт отдельно
+            и сможет хранить его в кеше. <br />
+            Другие страницы, которые подключают тот же скрипт, смогут брать его
+            из кеша вместо повторной загрузки из сети. И таким образом файл
+            будет загружаться с сервера только один раз. <br />
+            Это сокращает расход трафика и ускоряет загрузку страниц.
+          </p>
+        </div>
+        <div class="book_btn">
+          <button class="prev_btn">
+            <span
+              ><img src="./img/arrow_left.png" alt="" />
+              <p><a href="book_javascript.html">Назад</a></p>
+            </span>
+          </button>
+          <button class="next_btn">
+            <span
+              ><p>Продолжить</p>
+              <img src="./img/arrow.png" alt=""
+            /></span>
+          </button>
+        </div>
+        <footer class="footer">
+          <a href=""
+            ><img src="./img/logo_min2.png" alt="" class="logo_footer"
+          /></a>
+          <div class="footer_a_wrapper">
+            <a href="index.html#me" class="footer_a">О нас</a>
+            <a href="index.html#contact" class="footer_a">Контакты</a>
+            <a href="index.html#faq" class="footer_a">FAQ</a>
+            <a href="index.html#adv" class="footer_a">Преимущества</a>
+            <a href="index.html#rev" class="footer_a">Отзывы</a>
+            <a href="books.html" class="footer_a">Учебники</a>
+          </div>
+        </footer>
+        <div class="copyright">
+          © АПОУ ВО ВКСиИТ, 2023. Все права защищены. Разработано с любовью и
+          усердием.
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

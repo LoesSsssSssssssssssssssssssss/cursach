@@ -8,28 +8,32 @@
     <title>Главная</title>
   </head>
   <body>
+    <div class="header_visible">
+      <div class="header_wrapper">
+        <a href="index.html"
+          ><img src="./img/logo.png" alt="" class="logo"
+        /></a>
+        <button class="header_btn"><a href="books.html">Начать</a></button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header_wrapper">
+        <a href="index.html"
+          ><img src="./img/logo_min.png" alt="" class="logo_min"
+        /></a>
+        <div class="header_a_container">
+          <a href="#me" class="header_a">О нас</a>
+          <a href="#contact" class="header_a">Контакты</a>
+          <a href="#faq" class="header_a">FAQ</a>
+          <a href="#adv" class="header_a">Преимущества</a>
+          <a href="#rev" class="header_a">Отзывы</a>
+          <a href="books.html" class="header_a">Учебники</a>
+        </div>
+        <button class="header_btn"><a href="books.html">Начать</a></button>
+      </div>
+    </header>
     <div class="container">
       <div class="wrapper">
-        <div class="header_visible">
-          <a href="index.html"
-            ><img src="./img/logo.png" alt="" class="logo"
-          /></a>
-          <button class="header_btn">Начать</button>
-        </div>
-        <header class="header">
-          <a href="index.html"
-            ><img src="./img/logo_min.png" alt="" class="logo_min"
-          /></a>
-          <div class="header_a_container">
-            <a href="" class="header_a">О нас</a>
-            <a href="" class="header_a">Контакты</a>
-            <a href="" class="header_a">Вопросы и ответы</a>
-            <a href="" class="header_a">Условия</a>
-            <a href="" class="header_a">Отзывы</a>
-            <a href="" class="header_a">Цены</a>
-          </div>
-          <button class="header_btn">Начать</button>
-        </header>
         <div class="main_window">
           <div class="left_window">
             <div class="win_title">
@@ -41,7 +45,7 @@
             </div>
             <div class="win_btn">
               <p>Курсы</p>
-              <a href=""><img src="./img/courser.png" alt="" /></a>
+              <a href="books.html"><img src="./img/courser.png" alt="" /></a>
             </div>
           </div>
           <div class="right_window">
@@ -59,7 +63,7 @@
             </div>
             <button class="courser_btn">
               <span
-                ><p>К курсам</p>
+                ><p><a href="books.html">К курсам</a></p>
                 <img src="./img/arrow.png" alt=""
               /></span>
             </button>
@@ -67,7 +71,7 @@
           <img src="./img/carbondown.png" alt="" />
         </div>
       </div>
-      <div class="fon">
+      <div class="fon" id="me">
         <div class="fon_wrapper">
           <div class="fon_title">Наши основные направления обучения!</div>
           <div class="fon_row mg-t-3">
@@ -87,10 +91,10 @@
           </div>
         </div>
       </div>
-      <div class="wrapper">
+      <div class="wrapper" id="adv">
         <div class="advantages_title">Наши преимущества</div>
         <div class="advantages_row mg-t-3">
-          <img src="./img/advantages1.jpg" alt="" class="advantages_img" />
+          <img src="./img/image1.png" alt="" class="advantages_img" />
           <div class="advantages_desc">
             <div class="advantages_desc_min">
               <p>Удобно</p>
@@ -117,10 +121,10 @@
               лишь устройство с выходом в интернет.
             </div>
           </div>
-          <img src="./img/advantages1.jpg" alt="" class="advantages_img" />
+          <img src="./img/image 3.png" alt="" class="advantages_img" />
         </div>
         <div class="advantages_row mg-t-3">
-          <img src="./img/advantages1.jpg" alt="" class="advantages_img" />
+          <img src="./img/image 2.png" alt="" class="advantages_img" />
           <div class="advantages_desc">
             <div class="advantages_desc_min">
               <p>Удобно</p>
@@ -135,7 +139,8 @@
           </div>
         </div>
       </div>
-      <div class="fon2">
+      <div class="fon2" id="rev">
+        <div class="reviw_title">Отзывы</div>
         <div class="fon2_row">
           <div class="fon2_row_block">
             <div class="review">
@@ -604,10 +609,36 @@
         </div>
       </div>
       <div class="wrapper">
+        <div class="invite" id="faq">
+          <p>
+            Готовы начать свое обучение <br />
+            уже сегодня?
+          </p>
+          <button><a href="books.html">Начать сейчас</a></button>
+        </div>
         <div class="accordion">
           <div class="accordion_question">
             <div class="accord_question_header">
-              <p>Вопрос</p>
+              <p>Что такое курсы?</p>
+              <div class="accordion_toogle">
+                <span class="plus rotate90"></span>
+                <span class="plus"></span>
+              </div>
+            </div>
+            <div class="accordion_question_answer">
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие
+                различных форм деятельности представляет собой интересный
+                эксперимент проверки позиций, занимаемых участниками в отношении
+                поставленных задач. Не следует, однако забывать, что начало
+                повседневной работы по формированию позиции способствует
+                подготовки и реализации модели развития.
+              </p>
+            </div>
+          </div>
+          <div class="accordion_question">
+            <div class="accord_question_header">
+              <p>Как проходит обучение?</p>
               <div class="accordion_toogle">
                 <span class="plus rotate90"></span>
                 <span class="plus"></span>
@@ -662,25 +693,47 @@
               </p>
             </div>
           </div>
-          <div class="accordion_question">
-            <div class="accord_question_header">
-              <p>Вопрос</p>
-              <div class="accordion_toogle">
-                <span class="plus rotate90"></span>
-                <span class="plus"></span>
-              </div>
+        </div>
+        <div class="contact">
+          <p>
+            Присоединяйтесь <br />
+            к нам
+          </p>
+          <button class="invite_btn">
+            <span
+              ><p><a href="books.html">Присоединиться</a></p>
+              <img src="./img/arrow.png" alt=""
+            /></span>
+          </button>
+          <div class="contact_row" id="contact">
+            <div>
+              Контакты: <br />
+              E-mail: contact@vksit.ru <br />
+              Телефон: +7 (8172) 75-51-33 <br />
+              Адрес: 160011 г.Вологда, ул.Первомайская, д. 42
             </div>
-            <div class="accordion_question_answer">
-              <p>
-                Повседневная практика показывает, что дальнейшее развитие
-                различных форм деятельности представляет собой интересный
-                эксперимент проверки позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что начало
-                повседневной работы по формированию позиции способствует
-                подготовки и реализации модели развития.
-              </p>
+            <div>
+              <img src="./img/logo_min_black.png" alt="" class="contact_img" />
+              <img src="./img/vk_black.png" alt="" class="contact_img" />
             </div>
           </div>
+        </div>
+        <footer class="footer">
+          <a href=""
+            ><img src="./img/logo_min2.png" alt="" class="logo_footer"
+          /></a>
+          <div class="footer_a_wrapper">
+            <a href="#me" class="footer_a">О нас</a>
+            <a href="#contact" class="footer_a">Контакты</a>
+            <a href="#faq" class="footer_a">FAQ</a>
+            <a href="#adv" class="footer_a">Преимущества</a>
+            <a href="#rev" class="footer_a">Отзывы</a>
+            <a href="books.html" class="footer_a">Учебники</a>
+          </div>
+        </footer>
+        <div class="copyright">
+          © АПОУ ВО ВКСиИТ, 2023. Все права защищены. Разработано с любовью и
+          усердием.
         </div>
       </div>
     </div>

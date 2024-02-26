@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: 'OpenSans semiBold';
+  src: url('./fonts/opensans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
   font-family: 'OpenSans bold';
   src: url('./fonts/opensans/OpenSans-Bold.ttf');
 }
@@ -37,9 +42,9 @@
 /* main page */
 
 .header {
-  width: 1200px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 70px;
   align-items: center;
   position: fixed;
@@ -48,10 +53,17 @@
   z-index: 2;
 }
 
+.header_wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header_visible {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 70px;
   align-items: center;
   background-color: white;
@@ -331,14 +343,26 @@
 }
 
 .fon2 {
-  background-image: url('./img/fon2.png');
+  background-image: url('./img/fon 4.png');
   width: 100%;
-  height: 588px;
+  height: 700px;
   margin-top: 3%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.books_block_btn > a {
+  color: #6c09f5;
+}
+
+.reviw_title {
+  font-family: 'Manrope bold';
+  color: white;
+  font-size: 36px;
+  margin-left: 19%;
+  margin-top: 2%;
 }
 
 .fon2_row {
@@ -416,7 +440,7 @@
   width: 100%;
   border: 0.5px solid #555;
   border-radius: 10px;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
 }
 
 .accordion_toogle {
@@ -481,4 +505,558 @@
 
 .max_height {
   max-height: 100px;
+}
+
+.invite {
+  background-image: url('./img/fon3.png');
+  width: 100%;
+  height: 411px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.invite > p {
+  font-family: 'Manrope bold';
+  font-size: 52px;
+  color: white;
+  text-align: center;
+}
+
+.invite > button {
+  width: 180px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  color: white;
+  border: 3px solid white;
+  font-family: 'OpenSans semiBold';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.invite_btn {
+  background-color: #361efd;
+  width: 221px;
+  height: 58px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: white;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.invite_btn > span {
+  display: flex;
+  align-items: center;
+}
+
+.invite_btn > span > img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact > p {
+  font-family: 'Manrope bold';
+  font-size: 96px;
+  color: #111;
+}
+
+.contact_row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_row > div {
+  font-size: 20px;
+  font-family: 'Manrope regular';
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact_img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.footer_a_wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Manrope regular';
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Manrope regular';
+}
+
+/* books */
+
+.title {
+  font-family: 'Manrope bold';
+  font-size: 36px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.books_name_row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+.books_name_row > h2 {
+  font-size: 32px;
+  font-family: 'Manrope regular';
+  color: #000;
+}
+
+.books_img {
+  width: 75px;
+  border-radius: 5px;
+}
+
+.books_desc {
+  width: 630px;
+  border-left: 2px solid black;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: 'Manrope regular';
+  color: #000;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 35px;
+}
+
+.books_row {
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  gap: 14px;
+}
+
+.books_block {
+  width: 391px;
+  height: 225px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px -4px rgba(0, 0, 0, 0.25);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.books_block_up {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.books_block_title {
+  font-family: 'OpenSans semiBold';
+  font-size: 24px;
+  color: #000;
+}
+
+.books_block_desc {
+  width: 215px;
+  font-size: 14px;
+  font-family: 'OpenSans regular';
+  color: #555;
+  margin-top: 10px;
+}
+
+.books_block_img {
+  width: 75px;
+  height: 75px;
+}
+
+.books_block_down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.books_block_btn {
+  border: 2px solid #6c09f5;
+  color: #6c09f5;
+  border-radius: 50px;
+  font-family: 'OpenSans semiBold';
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+}
+
+.item_img {
+  width: 18px;
+  height: 18px;
+}
+
+.books_block_item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.item_desc {
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: #555;
+}
+
+.progress_row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.progress_title {
+  font-size: 18px;
+  font-family: 'Manrope regular';
+}
+
+.progress_span {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress_span > span {
+  font-size: 16px;
+  font-family: 'Manrope regular';
+  color: #555;
+}
+
+progress {
+  background-color: #d9d9d9;
+  height: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+progress::-webkit-progress-bar {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: #b584fa;
+  border-radius: 10px;
+}
+
+.test_btn {
+  width: 175px;
+  height: 50px;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 10px;
+  color: #555;
+  font-family: 'OpenSans semiBold';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book_part {
+  margin-top: 5%;
+  display: flex;
+}
+
+.part {
+  padding-right: 25px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-left: 25px;
+}
+
+.part > a {
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: #444;
+  text-decoration: none;
+}
+
+.part:first-child {
+  border-right: 1px solid #555;
+  padding-left: 0;
+}
+
+.part:last-child {
+  border-left: 1px solid #555;
+}
+
+.insert_wrapper {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  gap: 15px;
+}
+
+.counter2 {
+  counter-reset: li 1;
+}
+
+.counter3 {
+  counter-reset: li 2;
+}
+
+li:before {
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, '.') '. ';
+}
+
+li {
+  margin-top: 5%;
+  width: 300px;
+}
+
+.insert_column:last-child {
+  margin-bottom: 10%;
+}
+
+.insert_column > ol {
+  font-size: 18px;
+  font-family: 'OpenSans regular';
+}
+
+li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hr_part {
+  border: 1px solid #e1e1e1;
+  margin-top: 8%;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-family: 'Manrope regular';
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.pick {
+  background-color: #dedbff;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+.book_text {
+  font-size: 18px;
+  font-family: 'Manrope regular';
+}
+
+code {
+  background-color: #ebebeb;
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  font-size: 18px;
+  font-family: 'OpenSans semiBold';
+  padding: 20px 30px 20px 20px;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+
+.code_num {
+  display: flex;
+  flex-direction: column;
+}
+
+.code_num > span {
+  color: #555;
+}
+
+.code_field {
+  width: 100%;
+  margin-left: 3%;
+}
+
+.tab {
+  margin-left: 5%;
+}
+
+.tag_js {
+  color: #db6dff;
+}
+
+.tag_html {
+  color: rgb(59, 59, 255);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 20px;
+  border-left: 2px solid rgb(0, 117, 171);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: fit-content;
+  width: 1000px;
+}
+
+.info_up {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info_img {
+  width: 35px;
+}
+
+.info_text {
+  font-size: 18px;
+  font-family: 'Manrope regular';
+  margin-left: 5px;
+}
+
+.info_title {
+  font-family: 'Manrope bold';
+  font-size: 18px;
+}
+
+.warn {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 20px;
+  border-left: 2px solid rgb(203, 130, 4);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: fit-content;
+  width: 1000px;
+}
+
+.book_btn {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20%;
+  margin-top: 5%;
+  gap: 20px;
+}
+
+.next_btn {
+  background-color: #361efd;
+  width: 190px;
+  height: 58px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: white;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+button > a {
+  text-decoration: none;
+  color: white;
+}
+
+p > a {
+  text-decoration: none;
+  color: white;
+}
+
+.next_btn > span {
+  display: flex;
+  align-items: center;
+}
+
+.next_btn > span > img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+.prev_btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #555;
+  width: 120px;
+  height: 58px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: #555;
+  cursor: pointer;
+}
+
+.prev_btn > span > p > a {
+  font-size: 16px;
+  font-family: 'OpenSans regular';
+  color: #555;
+  cursor: pointer;
+}
+
+.prev_btn > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.prev_btn > span > img {
+  width: 20px;
 }
