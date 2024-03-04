@@ -5,15 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/favicon.ico" />
     <title>Главная</title>
   </head>
   <body>
+    <div class="modal-overlay">
+      <div class="modal" data-target="form-popup">
+        <div class="modal_content_reg">
+          <p class="modal_title">Регистрация</p>
+          <div class="input_wrapper">
+            <input type="text" class="modal_input" placeholder="Имя" />
+            <input type="email" class="modal_input" placeholder="Ваша почта" />
+            <input type="password" class="modal_input" placeholder="Пароль" />
+            <input
+              type="password"
+              class="modal_input"
+              placeholder="Повторите пароль"
+            />
+          </div>
+          <button class="profile_book_btn">
+            <a href="profile.html">Продолжить</a>
+          </button>
+          <div class="auth">
+            <p>Уже есть аккаунт?</p>
+            <button class="svap">Войти</button>
+          </div>
+        </div>
+        <div class="modal_content_auth display_none">
+          <p class="modal_title">Вход</p>
+
+          <div class="input_wrapper">
+            <input type="email" class="modal_input" placeholder="Почта" />
+            <input type="password" class="modal_input" placeholder="Пароль" />
+          </div>
+
+          <button class="profile_book_btn">
+            <a href="profile.html">Продолжить</a>
+          </button>
+          <div class="auth">
+            <p style="cursor: pointer">Забыли пароль?</p>
+            <p>Нет аккаунта?</p>
+            <button class="svap2">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="header_visible">
       <div class="header_wrapper">
         <a href="index.html"
           ><img src="./img/logo.png" alt="" class="logo"
         /></a>
-        <button class="header_btn"><a href="books.html">Начать</a></button>
+        <button class="header_btn" data-path="form-popup">Начать</button>
       </div>
     </div>
     <header class="header">
@@ -29,11 +71,33 @@
           <a href="#rev" class="header_a">Отзывы</a>
           <a href="books.html" class="header_a">Учебники</a>
         </div>
-        <button class="header_btn"><a href="books.html">Начать</a></button>
+        <button class="header_btn" data-path="form-popup">Начать</button>
       </div>
     </header>
     <div class="container">
       <div class="wrapper">
+        <div class="header_phone">
+          <a href="index.html"
+            ><img src="./img/logo_min.png" alt="" class="logo_min"
+          /></a>
+          <div class="menu">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <div class="menu-list">
+              <a href="#me" class="menu-item">О нас</a>
+              <a href="#contact" class="menu-item">Контакты</a>
+              <a href="#faq" class="menu-item">FAQ</a>
+              <a href="#adv" class="menu-item">Преимущества</a>
+              <a href="#rev" class="menu-item">Отзывы</a>
+              <a href="books.html" class="menu-item">Учебники</a>
+              <button class="header_btn" data-path="form-popup">Начать</button>
+            </div>
+          </div>
+        </div>
         <div class="main_window">
           <div class="left_window">
             <div class="win_title">
@@ -93,37 +157,12 @@
       </div>
       <div class="wrapper" id="adv">
         <div class="advantages_title">Наши преимущества</div>
-        <div class="advantages_row mg-t-3">
-          <img src="./img/image1.png" alt="" class="advantages_img" />
-          <div class="advantages_desc">
-            <div class="advantages_desc_min">
-              <p>Удобно</p>
-              <p>Комфортно</p>
-              <p>Доступно</p>
-            </div>
-            <div class="advantages_desc_title">Обучайтесь удаленно</div>
-            <div class="advantages_desc_blur">
-              Онлайн учебник позволяет обучаться из любой точки мира, вам нужно
-              лишь устройство с выходом в интернет.
-            </div>
-          </div>
-        </div>
-        <div class="advantages_row mg-t-3">
-          <div class="advantages_desc">
-            <div class="advantages_desc_min">
-              <p>Удобно</p>
-              <p>Комфортно</p>
-              <p>Доступно</p>
-            </div>
-            <div class="advantages_desc_title">Обучайтесь удаленно</div>
-            <div class="advantages_desc_blur">
-              Онлайн учебник позволяет обучаться из любой точки мира, вам нужно
-              лишь устройство с выходом в интернет.
-            </div>
-          </div>
-          <img src="./img/image 3.png" alt="" class="advantages_img" />
-        </div>
-        <div class="advantages_row mg-t-3">
+        <p class="advantages_p mg-t-2">
+          Откройте для себя программирование, начните изучать современные
+          инструменты web-разработки в удаленном формате в удобное для вас
+          время.
+        </p>
+        <div class="advantages_row mg-t-5">
           <img src="./img/image 2.png" alt="" class="advantages_img" />
           <div class="advantages_desc">
             <div class="advantages_desc_min">
@@ -131,10 +170,40 @@
               <p>Комфортно</p>
               <p>Доступно</p>
             </div>
-            <div class="advantages_desc_title">Обучайтесь удаленно</div>
+            <div class="advantages_desc_title">Обучайтесь онлайн</div>
             <div class="advantages_desc_blur">
               Онлайн учебник позволяет обучаться из любой точки мира, вам нужно
               лишь устройство с выходом в интернет.
+            </div>
+          </div>
+        </div>
+        <div class="advantages_row mg-t-3">
+          <div class="advantages_desc">
+            <div class="advantages_desc_min">
+              <p>Открыто</p>
+              <p>Доступно</p>
+              <p>Бесплатно</p>
+            </div>
+            <div class="advantages_desc_title">Доступно для всех</div>
+            <div class="advantages_desc_blur">
+              Учебник открыт и бесплатно доступен для всех желающих обучиться
+              web-разработке.
+            </div>
+          </div>
+          <img src="./img/image 3.png" alt="" class="advantages_img" />
+        </div>
+        <div class="advantages_row mg-t-3">
+          <img src="./img/image1.png" alt="" class="advantages_img" />
+          <div class="advantages_desc">
+            <div class="advantages_desc_min">
+              <p>Понятно</p>
+              <p>Актуально</p>
+              <p>Применимо</p>
+            </div>
+            <div class="advantages_desc_title">Обновления и актуальность</div>
+            <div class="advantages_desc_blur">
+              Онлайн учебник в отличии от бумажных аналогов постоянно
+              дорабатывается и содержит лишь актуальную и важную информацию.
             </div>
           </div>
         </div>
@@ -619,7 +688,7 @@
         <div class="accordion">
           <div class="accordion_question">
             <div class="accord_question_header">
-              <p>Что такое курсы?</p>
+              <p>Подойдет ли учебник, если я уже не новичок?</p>
               <div class="accordion_toogle">
                 <span class="plus rotate90"></span>
                 <span class="plus"></span>
@@ -627,18 +696,15 @@
             </div>
             <div class="accordion_question_answer">
               <p>
-                Повседневная практика показывает, что дальнейшее развитие
-                различных форм деятельности представляет собой интересный
-                эксперимент проверки позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что начало
-                повседневной работы по формированию позиции способствует
-                подготовки и реализации модели развития.
+                Да, учебник расчитан на людей с различной степенью знаний в том
+                или ином языке web-разработки, даже опытный разработчик
+                подчеркнет для себя что-нибудь интересное, век живи - век учись.
               </p>
             </div>
           </div>
           <div class="accordion_question">
             <div class="accord_question_header">
-              <p>Как проходит обучение?</p>
+              <p>Что будет после прохождения учебника?</p>
               <div class="accordion_toogle">
                 <span class="plus rotate90"></span>
                 <span class="plus"></span>
@@ -646,18 +712,14 @@
             </div>
             <div class="accordion_question_answer">
               <p>
-                Повседневная практика показывает, что дальнейшее развитие
-                различных форм деятельности представляет собой интересный
-                эксперимент проверки позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что начало
-                повседневной работы по формированию позиции способствует
-                подготовки и реализации модели развития.
+                После того как вы пройдете один из учебников, в конце у вас
+                появится возможность проверить свои знания и пройти тест.
               </p>
             </div>
           </div>
           <div class="accordion_question">
             <div class="accord_question_header">
-              <p>Вопрос</p>
+              <p>Актуальна ли информация?</p>
               <div class="accordion_toogle">
                 <span class="plus rotate90"></span>
                 <span class="plus"></span>
@@ -665,18 +727,15 @@
             </div>
             <div class="accordion_question_answer">
               <p>
-                Повседневная практика показывает, что дальнейшее развитие
-                различных форм деятельности представляет собой интересный
-                эксперимент проверки позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что начало
-                повседневной работы по формированию позиции способствует
-                подготовки и реализации модели развития.
+                Да, так как это онлайн учебник, в отличии от бумажных аналагов
+                он постоянно обновляется и следует современным тенденциям
+                web-разработки.
               </p>
             </div>
           </div>
           <div class="accordion_question">
             <div class="accord_question_header">
-              <p>Вопрос</p>
+              <p>Подойдет ли учебник новичку?</p>
               <div class="accordion_toogle">
                 <span class="plus rotate90"></span>
                 <span class="plus"></span>
@@ -684,12 +743,9 @@
             </div>
             <div class="accordion_question_answer">
               <p>
-                Повседневная практика показывает, что дальнейшее развитие
-                различных форм деятельности представляет собой интересный
-                эксперимент проверки позиций, занимаемых участниками в отношении
-                поставленных задач. Не следует, однако забывать, что начало
-                повседневной работы по формированию позиции способствует
-                подготовки и реализации модели развития.
+                Да, учебник расчитан на людей любого уровня знания в
+                программировании, в первую очередь на новичков, желающих
+                обучиться web-разработке.
               </p>
             </div>
           </div>
@@ -713,8 +769,12 @@
               Адрес: 160011 г.Вологда, ул.Первомайская, д. 42
             </div>
             <div>
-              <img src="./img/logo_min_black.png" alt="" class="contact_img" />
-              <img src="./img/vk_black.png" alt="" class="contact_img" />
+              <a href="https://vksit.ru/#/"
+                ><img src="./img/logo_min_black.png" alt="" class="contact_img"
+              /></a>
+              <a href="https://vk.com/vks_it"
+                ><img src="./img/vk_black.png" alt="" class="contact_img"
+              /></a>
             </div>
           </div>
         </div>

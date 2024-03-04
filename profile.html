@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <title>Профиль</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_wrapper">
+        <a href="index.html"
+          ><img src="./img/logo_min.png" alt="" class="logo_min"
+        /></a>
+        <div class="header_a_container">
+          <a href="index.html#me" class="header_a">О нас</a>
+          <a href="index.html#contact" class="header_a">Контакты</a>
+          <a href="index.html#faq" class="header_a">FAQ</a>
+          <a href="index.html#adv" class="header_a">Преимущества</a>
+          <a href="index.html#rev" class="header_a">Отзывы</a>
+          <a href="books.html" class="header_a">Учебники</a>
+        </div>
+        <button class="header_btn"><a href="profile.html">Начать</a></button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header_phone">
+          <a href="index.html"
+            ><img src="./img/logo_min.png" alt="" class="logo_min"
+          /></a>
+          <div class="menu">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <div class="menu-list">
+              <a href="index.html#me" class="menu-item">О нас</a>
+              <a href="index.html#contact" class="menu-item">Контакты</a>
+              <a href="index.html#faq" class="menu-item">FAQ</a>
+              <a href="index.html#adv" class="menu-item">Преимущества</a>
+              <a href="index.html#rev" class="menu-item">Отзывы</a>
+              <a href="books.html" class="menu-item">Учебники</a>
+            </div>
+          </div>
+        </div>
+        <h1 class="title">Личный кабинет</h1>
+        <div class="profile_up">
+          <div class="profile_circle"></div>
+          <div class="profile_desc">
+            <p>Имя: <span>Николай</span></p>
+            <p>Почта: <span>nikolay@mail.ru</span></p>
+            <p>Телефон: <span>+7(900)555-44-11</span></p>
+          </div>
+          <div class="profile_btn">
+            <button class="profile_button">Редактировать</button
+            ><button class="profile_button">Выход</button>
+          </div>
+        </div>
+        <h2 class="subtitle">Активные учебники</h2>
+        <div class="profile_books_row">
+          <div class="books_block">
+            <div class="books_block_up">
+              <div class="books_block_up_left">
+                <h3 class="books_block_title">CSS</h3>
+                <p class="books_block_desc">
+                  Базовый курс для начинающих web-разработчиков
+                </p>
+              </div>
+              <img src="./img/CSS3.png" alt="" class="books_block_img" />
+            </div>
+            <div class="books_block_down">
+              <button class="profile_book_btn">
+                <a href="book_javascript.html">Продолжить</a>
+              </button>
+              <div class="books_block_item">
+                <progress
+                  class="profile_progress"
+                  max="38"
+                  value="24"
+                ></progress>
+              </div>
+            </div>
+          </div>
+          <div class="books_block">
+            <div class="books_block_up">
+              <div class="books_block_up_left">
+                <h3 class="books_block_title">HTML</h3>
+                <p class="books_block_desc">
+                  Базовый курс для начинающих web-разработчиков
+                </p>
+              </div>
+              <img src="./img/HTML5.png" alt="" class="books_block_img" />
+            </div>
+            <div class="books_block_down">
+              <button class="profile_book_btn">
+                <a href="book_javascript.html">Продолжить</a>
+              </button>
+              <div class="books_block_item">
+                <progress
+                  class="profile_progress"
+                  max="38"
+                  value="24"
+                ></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="subtitle">Пройденные учебники</h2>
+        <div class="profile_books_row">
+          <div class="books_block">
+            <div class="books_block_up">
+              <div class="books_block_up_left">
+                <h3 class="books_block_title">JavaScript</h3>
+                <p class="books_block_desc">
+                  Базовый курс для начинающих web-разработчиков
+                </p>
+              </div>
+              <img src="./img/Javascript.png" alt="" class="books_block_img" />
+            </div>
+            <div class="books_block_down">
+              <button class="books_block_btn">
+                <a href="book_javascript.html">Еще раз</a>
+              </button>
+              <div class="books_block_item">
+                <progress
+                  class="profile_progress"
+                  max="38"
+                  value="38"
+                ></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <a href=""
+            ><img src="./img/logo_min2.png" alt="" class="logo_footer"
+          /></a>
+          <div class="footer_a_wrapper">
+            <a href="index.html#me" class="footer_a">О нас</a>
+            <a href="index.html#contact" class="footer_a">Контакты</a>
+            <a href="index.html#faq" class="footer_a">FAQ</a>
+            <a href="index.html#adv" class="footer_a">Преимущества</a>
+            <a href="index.html#rev" class="footer_a">Отзывы</a>
+            <a href="books.html" class="footer_a">Учебники</a>
+          </div>
+        </footer>
+        <div class="copyright">
+          © АПОУ ВО ВКСиИТ, 2023. Все права защищены. Разработано с любовью и
+          усердием.
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
